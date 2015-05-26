@@ -88,5 +88,6 @@ if (hasInterface || isServer) then
 [] execVM "addons\HvT\HvT.sqf"; 							// High Value Target
 [] execVM "addons\HvT\HvD.sqf"; 							// High Value Drugrunner
 [] execVM "addons\scripts\intro.sqf";						// Welcome intro
+[] execVM "addons\lvai.sqf";                                // Hostile AI heli
 };
 if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"}; // Epoch StatusBar
