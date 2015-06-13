@@ -278,9 +278,8 @@ player createDiaryRecord ["changelog",
  [
 "NL United",
 "
-<br/> [Added] Base relocker (It is hackable and destroyable)
+<br/> [Added] Base locker (It is hackable and destroyable)
 <br/> [Added] Ability to change uniform texture
-<br/> [Added] Custom view distance ability
 <br/> [Added] Show R.I.P. map marker on corpse location after death
 <br/> [Added] Multiplying money reward for players that stay on the server
 <br/> [Added] Changed the appearance of the store NPCs
@@ -290,16 +289,15 @@ player createDiaryRecord ["changelog",
 <br/> [Added] Locked vehicle hotwire in at a cost
 <br/> [Added] Heal self script
 <br/> [Added] Access to DLC Helicopter pilot seat without DLC
-<br/> [Added] Patrol mission: Airport patrol
+<br/> [Added] Patrol mission: Military patrol and Altis patrol
 <br/> [Added] New missions: Hostile Jet, Smugglers, Snipers and Hackers
-<br/> [Added] Blufor base for Blufor only
-<br/> [Added] Admin base in saltflats
 <br/> [Added] Intro script
 <br/> [Added] Player controlled IP cameras
 <br/> [Added] Device detector (IP Cameras and Spawn Beacons)
 <br/> [Added] Resupply truck
 <br/> [Added] Donator bases with donator lock state
 <br/> [Added] Mortar to one mission as reward
+<br/> [Added] High value target
 <br/> [Removed] Mortar from store
 <br/> [Changed] Raise some prices
 <br/> [Changed] Vehicles spawn in locked and with engine on
