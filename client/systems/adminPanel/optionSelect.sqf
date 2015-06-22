@@ -83,6 +83,10 @@ if (_uid call isAdmin) then
 				{
 					execVM "client\systems\adminPanel\toggleGodMode.sqf";
 				};
+				case 10: // toggle God mode
+				{
+					execVM "client\systems\adminPanel\toggleInvisMode.sqf";
+				};
 			};
 		};
 		case (!isNull _displayDebug): //Debug panel
