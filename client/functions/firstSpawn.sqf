@@ -8,7 +8,8 @@
 
 client_firstSpawn = true;
 
-[] execVM "client\functions\welcomeMessage.sqf";
+//[] execVM "client\functions\welcomeMessage.sqf";
+[] execVM "addons\TOParmaInfo\loadTOParmaInfo.sqf";
 
 // GoT addition - if this is the first spawn start the loyalty-timer
 if(format["%1",firstspawn] == format["%1","1"]) then 

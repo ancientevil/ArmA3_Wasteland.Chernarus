@@ -192,6 +192,15 @@ class playerSettings {
 			w = 0.125; h = 0.033 * safezoneH;
 		};*/ // Disable viewdistance button for now
 
+		
+		class TOParmaInfoButton : w_RscButton {
+			idc = -1;
+			text = "TOParma.com Info";
+			onButtonClick = "[] execVM 'addons\TOParmaInfo\loadTOParmaInfo.sqf'";
+			x = 0.228; y = 0.254;
+			w = 0.225; h = 0.033 * safezoneH;
+		};
+				
 		class btnDistanceInsane : w_RscButton {
 			text = "Insane";
 			onButtonClick = "setViewDistance 5000;";
