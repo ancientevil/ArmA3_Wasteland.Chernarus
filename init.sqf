@@ -74,21 +74,20 @@ if (isServer) then
 	[] execVM "server\init.sqf";
 };
 
-//init 3rd Party Scripts (not supposed to run on HC)
 if (hasInterface || isServer) then
 {
-[] execVM "addons\R3F_LOG\init.sqf";
-[] execVM "addons\proving_ground\init.sqf";
-[] execVM "addons\scripts\DynamicWeatherEffects.sqf";
-[] execVM "addons\JumpMF\init.sqf";
-[] execVM "addons\laptop\init.sqf";							// Addon for hack laptop mission
-[] execVM "addons\vactions\functions.sqf";					// Micovery vehicle actions
-[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";		// Airdrop
-[] execVM "addons\AF_Keypad\AF_KP_vars.sqf";				// Keypad for base locking
-[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";			// Fastrope
-[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";	// Mag Repacker
-[] execVM "addons\HvT\HvT.sqf"; 							// High Value Target
-[] execVM "addons\HvT\HvD.sqf"; 							// High Value Drugrunner
-
-[] execVM "addons\scripts\intro.sqf";						// Welcome intro
+	//init 3rd Party Scripts
+	[] execVM "addons\R3F_LOG\init.sqf";
+	[] execVM "addons\proving_ground\init.sqf";
+	[] execVM "addons\scripts\DynamicWeatherEffects.sqf";
+	[] execVM "addons\JumpMF\init.sqf";
+	[] execVM "addons\laptop\init.sqf";							// Addon for hack laptop mission
+	[] execVM "addons\vactions\functions.sqf";					// Micovery vehicle actions
+	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";		// Airdrop
+	[] execVM "addons\AF_Keypad\AF_KP_vars.sqf";				// Keypad for base locking
+	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";			// Fastrope
+	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";	// Mag Repacker
+	[] execVM "addons\HvT\HvT.sqf"; 							// High Value Target
+	[] execVM "addons\HvT\HvD.sqf"; 							// High Value Drugrunner
+	[] execVM "addons\scripts\intro.sqf";						// Welcome intro
 };
