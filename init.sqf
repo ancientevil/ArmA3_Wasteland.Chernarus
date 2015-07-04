@@ -86,7 +86,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";		// Airdrop
 	[] execVM "addons\AF_Keypad\AF_KP_vars.sqf";				// Keypad for base locking
 	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";			// Fastrope
-	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";	// Mag Repacker
+	[] execVM "addons\outlw_magRepack\MagRepack_init.sqf";		// Mag Repacker
 	[] execVM "addons\HvT\HvT.sqf"; 							// High Value Target
 	[] execVM "addons\HvT\HvD.sqf"; 							// High Value Drugrunner
 	[] execVM "addons\scripts\intro.sqf";						// Welcome intro
