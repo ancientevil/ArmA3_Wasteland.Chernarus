@@ -346,6 +346,7 @@ player createDiaryRecord ["credits",
 <br/>	* Das Attorney (Jump MF)
 <br/>	* Ed! (404Games forums)
 <br/>	* Farooq (GitHub)
+<br/>	* gtoddc (A3W forums)
 <br/>	* HatchetHarry (GitHub)
 <br/>	* Hub (TeamPlayerGaming)
 <br/>	* k4n30 (GitHub)
