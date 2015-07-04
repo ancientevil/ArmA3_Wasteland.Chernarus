@@ -4,7 +4,7 @@
 //	@file Name: functions.sqf
 //	@file Author: AgentRev
 
-private ["_baseSavingOn", "_boxSavingOn", "_staticWeaponSavingOn", "_warchestSavingOn", "_warchestMoneySavingOn", "_beaconSavingOn", "_cameraSavingOn", "_savingMethod", "_isBox", "_isStaticWeapon", "_isWarchest", "_isBeacon", "_isCamera"];
+private ["_baseSavingOn", "_boxSavingOn", "_staticWeaponSavingOn", "_warchestSavingOn", "_warchestMoneySavingOn", "_beaconSavingOn", "_timeSavingOn", "_weatherSavingOn", "_cameraSavingOn", "_savingMethod", "_isBox", "_isStaticWeapon", "_isWarchest", "_isBeacon", "_isCamera"];
 
 _baseSavingOn = ["A3W_baseSaving"] call isConfigOn;
 _boxSavingOn = ["A3W_boxSaving"] call isConfigOn;
@@ -12,6 +12,8 @@ _staticWeaponSavingOn = ["A3W_staticWeaponSaving"] call isConfigOn;
 _warchestSavingOn = ["A3W_warchestSaving"] call isConfigOn;
 _warchestMoneySavingOn = ["A3W_warchestMoneySaving"] call isConfigOn;
 _beaconSavingOn = ["A3W_spawnBeaconSaving"] call isConfigOn;
+_timeSavingOn = ["A3W_timeSaving"] call isConfigOn;
+_weatherSavingOn = ["A3W_weatherSaving"] call isConfigOn;
 _cameraSavingOn = ["A3W_cctvCameraSaving"] call isConfigOn;
 
 _savingMethod = call A3W_savingMethod;
