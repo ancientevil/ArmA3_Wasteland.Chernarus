@@ -344,6 +344,7 @@ player createDiaryRecord ["credits",
 <br/>	* Hub (TeamPlayerGaming)
 <br/>	* k4n30 (GitHub)
 <br/>	* Krunch (GitHub)
+<br/>	* LouDnl (GitHub / A3W forums)
 <br/>	* madbull (R3F)
 <br/>	* Mainfrezzer (Magnon)
 <br/>	* meat147 (GitHub)
@@ -365,7 +366,6 @@ player createDiaryRecord ["credits",
 <br/>	* Cael817 (A3W forums)
 <br/>	* Micovery (A3W forums)
 <br/>	* BadVolt (A3W forums)
-<br/>	* LouD (NL United / A3W forums)
 <br/>
 <br/><font size='16'>Thanks A LOT to everyone involved for the help and inspiration!</font>
 "
