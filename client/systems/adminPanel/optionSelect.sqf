@@ -31,7 +31,7 @@ if (_uid call isAdmin) then
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\playerMenu.sqf";
-					if (!isNil "notifyAdminMenu") then { ["Playermanagement", "Opened"] call notifyAdminMenu };
+					if (!isNil "notifyAdminMenu") then { ["PlayerManagement", "Opened"] call notifyAdminMenu };
 				};
 				case 1: //Full Vehicle Management
 				{
