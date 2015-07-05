@@ -42,7 +42,7 @@ if (_uid call isAdmin) then
 				case 2: //Tags
 				{
 					execVM "client\systems\adminPanel\playerTags.sqf";
-					if (!isNil "notifyAdminMenu") then { ["PlayerTags", "Used"] call notifyAdminMenu };
+					//Is logged from inside target script
 				};
 				case 3: //Teleport
 				{
@@ -89,12 +89,12 @@ if (_uid call isAdmin) then
 				case 9: // toggle God mode
 				{
 					execVM "client\systems\adminPanel\toggleGodMode.sqf";
-					if (!isNil "notifyAdminMenu") then { ["GodMode", "Used"] call notifyAdminMenu };
+					//Is logged from inside target script
 				};
 				case 10: // toggle God mode
 				{
 					execVM "client\systems\adminPanel\toggleInvisMode.sqf";
-					if (!isNil "notifyAdminMenu") then { ["Invisibility", "Used"] call notifyAdminMenu };
+					//Is logged from inside target script
 				};
 			};
 		};
@@ -108,39 +108,47 @@ if (_uid call isAdmin) then
 				{
 					closeDialog 0;
 					[] call loadGunStore;
+					if (!isNil "notifyAdminMenu") then { ["GunStore", "Opened"] call notifyAdminMenu };
 				};
 				case 1: //Access General Store
 				{
 					closeDialog 0;
 					[] call loadGeneralStore;
+					if (!isNil "notifyAdminMenu") then { ["GeneralStore", "Opened"] call notifyAdminMenu };
 				};
 				case 2: //Access Vehicle Store
 				{
 					closeDialog 0;
 					[] call loadVehicleStore;
+					if (!isNil "notifyAdminMenu") then { ["VehicleStore", "Opened"] call notifyAdminMenu };
 				};
 				case 3: //Access ATM Dialog
 				{
 					closeDialog 0;
 					call mf_items_atm_access;
+					if (!isNil "notifyAdminMenu") then { ["ATM", "Opened"] call notifyAdminMenu };
 				};
 				case 4: //Access Respawn Dialog
 				{
 					closeDialog 0;
 					true spawn client_respawnDialog;
+					if (!isNil "notifyAdminMenu") then { ["RespawnDialog", "Opened"] call notifyAdminMenu };
 				};
 				case 5: //Access Proving Grounds
 				{
 					closeDialog 0;
 					createDialog "balca_debug_main";
+					if (!isNil "notifyAdminMenu") then { ["ProvingGrounds", "Opened"] call notifyAdminMenu };
 				};
 				case 6: //Show server FPS function
 				{
 					hint format["Server FPS: %1",serverFPS];
+					if (!isNil "notifyAdminMenu") then { ["ServerFPS", "Used"] call notifyAdminMenu };
 				};
 				case 7: //Access TOParma News
 				{
 					[] call loadTOParmaInfo;
+					if (!isNil "notifyAdminMenu") then { ["News", "Opened"] call notifyAdminMenu };
 				};
 			};
 		};
