@@ -25,3 +25,31 @@ _isBeacon = { _this getVariable ["a3w_spawnBeacon", false] };
 _isCamera = { _this getVariable ["a3w_cctv_camera", false] };
 
 _isSaveable = { (toLower _this) in A3W_saveableObjects };
+
+_hcProfileVarName =
+{
+	private "_midName";
+
+	if (_savingMethod == "extDB") then
+	{
+		_midName = format ["extDB_Server%1_", call A3W_extDB_ServerID];
+	};
+
+	if (_savingMethod == "profile") then
+	{
+		_midName = ["PDB_ObjectFileID", "A3W_"] call getPublicVar;
+	};
+
+	if (!isNil "_midName") then { "A3W_hcSaving_" + _midName + _this } else { nil }
+};
+
+_hcSaveProfileVar =
+{
+	_varName = _this call _hcProfileVarName;
+
+	if (!isNil "_varName") then
+	{
+		profileNamespace setVariable [_varName, missionNamespace getVariable _this];
+		saveProfileNamespace;
+	};
+};
