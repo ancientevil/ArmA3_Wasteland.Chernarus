@@ -31,15 +31,18 @@ if (_uid call isAdmin) then
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\playerMenu.sqf";
+					if (!isNil "notifyAdminMenu") then { ["Playermanagement", "Opened"] call notifyAdminMenu };
 				};
 				case 1: //Full Vehicle Management
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\vehicleManagement.sqf";
+					if (!isNil "notifyAdminMenu") then { ["VehicleManagement", "Opened"] call notifyAdminMenu };
 				};
 				case 2: //Tags
 				{
 					execVM "client\systems\adminPanel\playerTags.sqf";
+					if (!isNil "notifyAdminMenu") then { ["PlayerTags", "Used"] call notifyAdminMenu };
 				};
 				case 3: //Teleport
 				{
@@ -57,11 +60,13 @@ if (_uid call isAdmin) then
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\tptome.sqf";
+					if (!isNil "notifyAdminMenu") then { ["TeleportToMe", "Used"] call notifyAdminMenu };
 				};
 				case 5: //Teleport me to player
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\tpmeto.sqf";
+					if (!isNil "notifyAdminMenu") then { ["TeleportMeTo", "Used"] call notifyAdminMenu };
 				};
 				case 6: //Money
 				{
@@ -73,19 +78,23 @@ if (_uid call isAdmin) then
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\loadDebugMenu.sqf";
+					if (!isNil "notifyAdminMenu") then { ["LoadDebugMenu", "Opened"] call notifyAdminMenu };
 				};
 				case 8: //Object search menu
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\loadObjectSearch.sqf";
+					if (!isNil "notifyAdminMenu") then { ["ObjectSearch", "Opened"] call notifyAdminMenu };
 				};
 				case 9: // toggle God mode
 				{
 					execVM "client\systems\adminPanel\toggleGodMode.sqf";
+					if (!isNil "notifyAdminMenu") then { ["GodMode", "Used"] call notifyAdminMenu };
 				};
 				case 10: // toggle God mode
 				{
 					execVM "client\systems\adminPanel\toggleInvisMode.sqf";
+					if (!isNil "notifyAdminMenu") then { ["Invisibility", "Used"] call notifyAdminMenu };
 				};
 			};
 		};
