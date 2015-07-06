@@ -310,30 +310,53 @@ player createDiaryRecord ["changelog",
 "NL United",
 "
 <br/> [Added] Base locker (It is hackable and destroyable)
+<br/> [Added] Safe with keypad to General Store
 <br/> [Added] Ability to change uniform texture
+<br/> [Added] Ability to mark your owned vehicles and objects on the map
 <br/> [Added] Show R.I.P. map marker on corpse location after death
 <br/> [Added] Multiplying money reward for players that stay on the server
 <br/> [Added] Changed the appearance of the store NPCs
-<br/> [Added] Added several new vehicle textures
-<br/> [Added] Sell and Change Ownership trucks
+<br/> [Added] Sell, Change Ownership and Resupply trucks
 <br/> [Added] Vehicle locking and info script by Micovery
-<br/> [Added] Locked vehicle hotwire in at a cost
+<br/> [Added] Vehicle lock state saving
+<br/> [Added] Locked vehicle break in and hot wire at a cost
 <br/> [Added] Heal self script
 <br/> [Added] Access to DLC Helicopter pilot seat without DLC
-<br/> [Added] Patrol mission: Military patrol and Altis patrol
-<br/> [Added] New missions: Hostile Jet, Smugglers, Snipers and Hackers
+<br/> [Added] New main missions: Hackers, Abandoned Jet, Hostile Jet Formation
+<br/> [Added] New side missions: Snipers, DrugsRunners, Roadblock
+<br/> [Added] New side missions: Geocache, Smugglers, Hostile Jet
+<br/> [Added] New money missions: Military patrol and Altis-Stratis patrol
 <br/> [Added] Intro script
 <br/> [Added] Player controlled IP cameras
-<br/> [Added] Device detector (IP Cameras and Spawn Beacons)
-<br/> [Added] Resupply truck
+<br/> [Added] Device detector (IP Cameras, Spawn Beacons and Base Lockers)
 <br/> [Added] Donator bases with donator lock state
+<br/> [Added] BluFor and OpFor Base
 <br/> [Added] Mortar to one mission as reward
-<br/> [Added] High value target
+<br/> [Added] High value target and Drugs runner
+<br/> [Added] Gas Grenades and Gas Masks by Mokey
+<br/> [Added] Logging to all admin commands
+<br/> [Added] Airdrop system by Apoc
+<br/> [Added] Teamlock to independent
+<br/> [Added] Voiceblock to side channel
+<br/> [Added] New welcome screen by Lodac from TOP Arma
+<br/> [Added] Drugs by Micovery
+<br/> [Added] Wateredge fix by Micovery
+<br/> [Added] Maximum spawnbeacon option
+<br/> [Added] Delete spawnbeacon ability
+<br/> [Added] 3D Markers
+<br/> [Added] ZLT Fastrope
+<br/> [Added] Explosives to vehicles
+<br/> [Added] Fix for spawnbeacons placed above water
+<br/> [Added] IEDs to stores and vehicles.
+<br/> [Added] Several new objects to General store for base building
 <br/> [Removed] Mortar from store
-<br/> [Changed] Raise some prices
+<br/> [Changed] Starting gear
+<br/> [Changed] Only 2 vehicle stores sell planes (Altis)
+<br/> [Changed] Disabled Fog
+<br/> [Changed] Changed prices
 <br/> [Changed] Vehicles spawn in locked and with engine on
 <br/> [Changed] Spawnbeacon insertion to 0 mtrs
-<br/> [Changed] Old R3F script to 3.1
+<br/> [Changed] Old R3F script to version 3.1
 "
 ]];
 
