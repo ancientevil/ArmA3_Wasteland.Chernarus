@@ -46,7 +46,7 @@ if (!isDedicated) then
 	{
 		if (hasInterface) then // Normal player
 		{
-			9999 cutText ["Welcome to NL United A3Wasteland, please wait for your client to initialize", "BLACK", 0.01];
+			9999 cutText ["Welcome to DADS A3Wasteland, please wait for your client to initialize", "BLACK", 0.01];
 
 			waitUntil {!isNull player};
 			player setVariable ["playerSpawning", true, true];
@@ -98,4 +98,5 @@ if (hasInterface || isServer) then
 	[] execVM "addons\HvT\HvD.sqf"; 							// High Value Drugrunner
 	[] execVM "addons\Grenades\ToxicGas.sqf"; 					// Toxic Gas Addon
 	[] execVM "addons\scripts\intro.sqf";						// Welcome intro
+	[] execVM "addons\statusBar\statusbar.sqf"};                //Statusbar
 };
