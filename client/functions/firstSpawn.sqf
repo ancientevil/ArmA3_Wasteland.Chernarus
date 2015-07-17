@@ -8,7 +8,8 @@
 
 client_firstSpawn = true;
 
-[] execVM "client\functions\welcomeMessage.sqf";
+//[] execVM "client\functions\welcomeMessage.sqf";
+[] execVM "addons\TOParmaInfo\loadTOParmaInfo.sqf";
 
 // GoT addition - if this is the first spawn start the loyalty-timer
 if(format["%1",firstspawn] == format["%1","1"]) then 
@@ -62,11 +63,11 @@ player addEventHandler ["Put",
 
 player addEventHandler ["WeaponDisassembled", { _this spawn weaponDisassembledEvent }];
 
-player addEventHandler ["WeaponAssembled", 
+player addEventHandler ["WeaponAssembled",
 {
 	_player = _this select 0;
-	_obj	= _this select 1;
-	if (_obj isKindOf "UAV_01_base_F") then {_obj setVariable ["ownerUID", getPlayerUID _player, true];};
+	_obj = _this select 1;
+	if (_obj isKindOf "UAV_01_base_F") then { _obj setVariable ["ownerUID", getPlayerUID _player, true] };
 }];
 
 player addEventHandler ["InventoryOpened",

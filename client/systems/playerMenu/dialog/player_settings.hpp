@@ -27,7 +27,7 @@ class playerSettings {
 			idc = -1;
 			colorText[] = {1, 1, 1, 1};
 			colorBackground[] = {0,0,0,0};
-			text = "#(argb,8,8,3)color(0.45,0.005,0,1)";
+			text = "#(argb,8,8,3)color(0.25,0.51,0.96,0.8)";
 
 			x = 0;
 			y = 0.1;
@@ -37,7 +37,7 @@ class playerSettings {
 
 		class MainTitle : w_RscText {
 			idc = -1;
-			text = "Player Menu";
+			text = "Player Inventory";
 			sizeEx = 0.04;
 			shadow = 2;
 			x = 0.260; y = 0.1;
@@ -46,14 +46,14 @@ class playerSettings {
 
 		class waterIcon : w_RscPicture {
 			idc = -1;
-			text = "client\icons\energydrink.paa";
+			text = "client\icons\water.paa";
 			x = 0.022; y = 0.2;
 			w = 0.04 / (4/3); h = 0.04;
 		};
 
 		class foodIcon : w_RscPicture {
 			idc = -1;
-			text = "client\icons\cannedfood.paa";
+			text = "client\icons\food.paa";
 			x = 0.022; y = 0.26;
 			w = 0.04 / (4/3); h = 0.04;
 		};
@@ -63,13 +63,6 @@ class playerSettings {
 			text = "client\icons\money.paa";
 			x = 0.022; y = 0.32;
 			w = 0.04 / (4/3); h = 0.04;
-		};
-		
-		class serverLogo : w_RscPicture {
-			idc = -1;
-			text = "mapconfig\logo.paa";
-			x = 0.225; y = 0.20;
-			w = 0.32 / (4/3); h = 0.32;
 		};
 
 		class waterText : w_RscText {
@@ -95,8 +88,6 @@ class playerSettings {
 			x = 0.06; y = 0.313;
 			w = 0.3; h = 0.05;
 		};
-		
-
 		
 		class distanceText : w_RscText {
 			idc = view_range_text;
@@ -172,7 +163,7 @@ class playerSettings {
 		class btnDistanceNear : w_RscButton {
 			idc = -1;
 			text = "Near";
-			onButtonClick = "setViewDistance 1000; setObjectViewDistance 900; setTerrainGrid 25;";
+			onButtonClick = "setViewDistance 1100; setObjectViewDistance 1100;";
 			x = 0.02; y = 0.43;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
@@ -180,7 +171,7 @@ class playerSettings {
 		class btnDistanceMedium : w_RscButton {
 			idc = -1;
 			text = "Medium";
-			onButtonClick = "setViewDistance 2000; setObjectViewDistance 1500; setTerrainGrid 25;";
+			onButtonClick = "setViewDistance 2200; setObjectViewDistance 2200;";
 			x = 0.02; y = 0.5;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
@@ -188,27 +179,28 @@ class playerSettings {
 		class btnDistanceFar : w_RscButton {
 			idc = -1;
 			text = "Far";
-			onButtonClick = "setViewDistance 3000; setObjectViewDistance 2500; setTerrainGrid 10;";
+			onButtonClick = "setViewDistance 3300; setObjectViewDistance 3300;";
 			x = 0.02; y = 0.57;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
 		
-		//class btnDistanceCustom : w_RscButton {
-		//	idc = -1;
-		//	text = "Custom";
-		//	onButtonClick = "[] execVM 'addons\taw_vd\fn_openTAWVD.sqf'";
-		//	x = 0.158; y = 0.57;
-		//	w = 0.125; h = 0.033 * safezoneH;
-		//};
-
-		class btnDistanceEffects : w_RscButton {
+		/*class btnDistanceCustom : w_RscButton {
 			idc = -1;
-			text = "Effects";
-			onButtonClick = "[] execVM 'addons\disableEnvironment\disableEnvironment.sqf'";
-			x = 0.158; y = 0.5;
+			text = "Custom";
+			onButtonClick = "[] execVM 'addons\taw_vd\fn_openTAWVD.sqf'";
+			x = 0.158; y = 0.57;
 			w = 0.125; h = 0.033 * safezoneH;
-		};
+		};*/ // Disable viewdistance button for now
+
 		
+		class TOParmaInfoButton : w_RscButton {
+			idc = -1;
+			text = "NL United Info";
+			onButtonClick = "[] execVM 'addons\TOParmaInfo\loadTOParmaInfo.sqf'";
+			x = 0.228; y = 0.254;
+			w = 0.225; h = 0.033 * safezoneH;
+		};
+				
 		class btnDistanceInsane : w_RscButton {
 			text = "Insane";
 			onButtonClick = "setViewDistance 5000;";
@@ -218,5 +210,3 @@ class playerSettings {
 
 	};
 };
-
-

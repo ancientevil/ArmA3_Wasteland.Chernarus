@@ -16,7 +16,7 @@ _col_mixed = "ColorOrange";
 
 //Creates the markers around gunstores.
 {
-	if (!isPlayer _x && {["GunStore", vehicleVarName _x] call fn_startsWith}) then
+	if (!isPlayer _x && {(vehicleVarName _x) select [0,8] == "GunStore"}) then
 	{
 		_npcPos = getPosATL _x;
 
@@ -70,7 +70,7 @@ _col_mixed = "ColorOrange";
 		deleteMarkerLocal _markerName;
 		_markerName = format["marker_shop_desc_%1",_x];
 		deleteMarkerLocal _markerName;
-	}; 
+	};
 } forEach entities "CAManBase";
 
 //Used to set the status of each store.

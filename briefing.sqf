@@ -5,6 +5,12 @@
 
 if (!hasInterface) exitWith {};
 
+_trimName = { _this select [1, count _this - 2] };
+_aKeyName = { _arr = actionKeysNamesArray _this; if (count _arr == 0) exitWith {"<UNDEFINED>"}; _arr select 0 };
+
+#define NKEYNAME(DIK) (keyName DIK call _trimName)
+#define AKEYNAME(ACT) (ACT call _aKeyName)
+
 waitUntil {!isNull player};
 
 player createDiarySubject ["infos", "Infos and Help"];
@@ -13,11 +19,36 @@ player createDiarySubject ["credits", "Credits"];
 
 player createDiaryRecord ["changelog",
 [
+"v1.2",
+"
+<br/>[Added] Mag Repack by Outlawled (Ctrl + " + NKEYNAME(19) + ")
+<br/>[Added] Adjustable NV by xx-LSD-xx (Shift + PageUp/Down)
+<br/>[Added] New vehicle store paintjobs
+<br/>[Added] Town spawn cooldown
+<br/>[Added] Ghosting timer
+<br/>[Added] Object lock restriction near stores and missions
+<br/>[Added] Headless client object saving
+<br/>[Added] Time and weather saving
+<br/>[Changed] Expanded UAV control restriction to quadcopters
+<br/>[Changed] Injured players no longer count as town enemies
+<br/>[Changed] Upgraded extDB to extDB2 by Torndeco
+<br/>[Changed] Updated antihack
+<br/>[Fixed] Old spawn beacons no longer shown on spawn menu
+<br/>[Fixed] Multiple money duping exploits
+<br/>[Fixed] Vehicles and objects sometimes disappearing from DB
+<br/>[Fixed] Severe injuries caused by jumping over small ledges
+<br/>[Fixed] Antihack kicks due to RHS, MCC, AGM, ACE3, ALiVE
+<br/>[Fixed] Various minor bugfixes and optimizations
+"
+]];
+
+player createDiaryRecord ["changelog",
+[
 "v1.1b",
 "
 <br/>[Added] Marksmen DLC content
 <br/>[Added] Prevent usage of commander camera
-<br/>[Added] Emergency eject hotkey (Ctrl + " + actionKeysNames "GetOut" + ")
+<br/>[Added] Emergency eject hotkey (Ctrl + " + AKEYNAME("GetOut") + ")
 <br/>[Added] Restricted UAV connection to owner's group
 <br/>[Changed] Improved purchased vehicle setup time
 <br/>[Changed] Admins can now use global voice chat
@@ -64,7 +95,7 @@ player createDiaryRecord ["changelog",
 <br/>[Changed] Spawn beacon item drop to sleeping bag
 <br/>[Fixed] More money exploits
 <br/>[Fixed] Scoreboard ordering
-<br/>[Fixed] Vehicle repair & refuel sometimes not working
+<br/>[Fixed] Vehicle repair and refuel sometimes not working
 <br/>[Fixed] Injured players' corpses being deleted on disconnect
 <br/>[Fixed] Static weapon disassembly prevention
 <br/>[Fixed] Excess bought rockets ending up in uniform or vest
@@ -117,7 +148,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9h",
+"v0.9h",
 "
 <br/>[Added] Custom revive system based on Farooq's Revive
 <br/>[Added] Territory payroll at regular intervals
@@ -177,7 +208,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9g",
+"v0.9g",
 "
 <br/>[Added] - Vehicle stores
 <br/>[Added] - New lootspawner by Na_Palm, stuff in ALL buildings
@@ -219,7 +250,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9f",
+"v0.9f",
 "
 <br/>[Added] - Money missions
 <br/>[Added] - Sell Crate Items option at stores when moving crate
@@ -234,7 +265,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9e",
+"v0.9e",
 "
 <br/>[Added] - Territory system
 <br/>[Added] - Jumping option (step over while running)
@@ -248,7 +279,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9d",
+"v0.9d",
 "
 <br/>[Added] - Store object purchases
 <br/>[Changed] - New UI by KoS
@@ -257,7 +288,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9c",
+"v0.9c",
 "
 <br/>[Changed] - Instant money pickup and drop
 <br/>[Changed] - Increased plane and heli spawning odds
@@ -268,7 +299,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9b",
+"v0.9b",
 "
 <br/>[Initial release] - Welcome to Altis!
 "
@@ -278,33 +309,54 @@ player createDiaryRecord ["changelog",
  [
 "NL United",
 "
-<br/> [Added] Base relocker (It is hackable and destroyable)
+<br/> [Added] Base locker (It is hackable and destroyable)
+<br/> [Added] Safe with keypad to General Store
 <br/> [Added] Ability to change uniform texture
-<br/> [Added] Custom view distance ability
+<br/> [Added] Ability to mark your owned vehicles and objects on the map
 <br/> [Added] Show R.I.P. map marker on corpse location after death
 <br/> [Added] Multiplying money reward for players that stay on the server
 <br/> [Added] Changed the appearance of the store NPCs
-<br/> [Added] Added several new vehicle textures
-<br/> [Added] Sell and Change Ownership trucks
+<br/> [Added] Sell, Change Ownership and Resupply trucks
 <br/> [Added] Vehicle locking and info script by Micovery
-<br/> [Added] Locked vehicle hotwire in at a cost
+<br/> [Added] Vehicle lock state saving
+<br/> [Added] Locked vehicle break in and hot wire at a cost
 <br/> [Added] Heal self script
 <br/> [Added] Access to DLC Helicopter pilot seat without DLC
-<br/> [Added] Patrol mission: Airport patrol
-<br/> [Added] New missions: Hostile Jet, Smugglers, Snipers and Hackers
-<br/> [Added] Blufor base for Blufor only
-<br/> [Added] Admin base in saltflats
+<br/> [Added] New main missions: Hackers, Abandoned Jet, Hostile Jet Formation
+<br/> [Added] New side missions: Snipers, DrugsRunners, Roadblock
+<br/> [Added] New side missions: Geocache, Smugglers, Hostile Jet
+<br/> [Added] New money missions: Military patrol and Altis-Stratis patrol
 <br/> [Added] Intro script
 <br/> [Added] Player controlled IP cameras
-<br/> [Added] Device detector (IP Cameras and Spawn Beacons)
-<br/> [Added] Resupply truck
+<br/> [Added] Device detector (IP Cameras, Spawn Beacons and Base Lockers)
 <br/> [Added] Donator bases with donator lock state
+<br/> [Added] BluFor and OpFor Base
 <br/> [Added] Mortar to one mission as reward
+<br/> [Added] High value target and Drugs runner
+<br/> [Added] Gas Grenades and Gas Masks by Mokey
+<br/> [Added] Logging to all admin commands
+<br/> [Added] Airdrop system by Apoc
+<br/> [Added] Teamlock to independent
+<br/> [Added] Voiceblock to side channel
+<br/> [Added] New welcome screen by Lodac from TOP Arma
+<br/> [Added] Drugs by Micovery
+<br/> [Added] Wateredge fix by Micovery
+<br/> [Added] Maximum spawnbeacon option
+<br/> [Added] Delete spawnbeacon ability
+<br/> [Added] 3D Markers
+<br/> [Added] ZLT Fastrope
+<br/> [Added] Explosives to vehicles
+<br/> [Added] Fix for spawnbeacons placed above water
+<br/> [Added] IEDs to stores and vehicles.
+<br/> [Added] Several new objects to General store for base building
 <br/> [Removed] Mortar from store
-<br/> [Changed] Raise some prices
+<br/> [Changed] Starting gear
+<br/> [Changed] Only 2 vehicle stores sell planes (Altis)
+<br/> [Changed] Disabled Fog
+<br/> [Changed] Changed prices
 <br/> [Changed] Vehicles spawn in locked and with engine on
 <br/> [Changed] Spawnbeacon insertion to 0 mtrs
-<br/> [Changed] Old R3F script to 3.1
+<br/> [Changed] Old R3F script to version 3.1
 "
 ]];
 
@@ -342,15 +394,19 @@ player createDiaryRecord ["credits",
 <br/>	* Das Attorney (Jump MF)
 <br/>	* Ed! (404Games forums)
 <br/>	* Farooq (GitHub)
+<br/>	* gtoddc (A3W forums)
 <br/>	* HatchetHarry (GitHub)
 <br/>	* Hub (TeamPlayerGaming)
 <br/>	* k4n30 (GitHub)
+<br/>	* Killzone_Kid (KillzoneKid.com)
 <br/>	* Krunch (GitHub)
+<br/>	* LouDnl (GitHub / A3W forums)
 <br/>	* madbull (R3F)
 <br/>	* Mainfrezzer (Magnon)
 <br/>	* meat147 (GitHub)
 <br/>	* micovery (GitHub)
 <br/>	* Na_Palm (BIS forums)
+<br/>	* Outlawled (Armaholic)
 <br/>	* red281gt (GitHub)
 <br/>	* RockHound (BierAG)
 <br/>	* s3kShUn61 (GitHub)
@@ -363,11 +419,11 @@ player createDiaryRecord ["credits",
 <br/>	* spunFIN (BIS forums)
 <br/>	* Tonic (BIS forums)
 <br/>	* wiking.at (A3W forums)
+<br/>	* xx-LSD-xx (Armaholic)
 <br/>	* Zenophon (BIS Forums)
 <br/>	* Cael817 (A3W forums)
 <br/>	* Micovery (A3W forums)
 <br/>	* BadVolt (A3W forums)
-<br/>	* LouD (NL United / A3W forums)
 <br/>
 <br/><font size='16'>Thanks A LOT to everyone involved for the help and inspiration!</font>
 "
@@ -391,6 +447,47 @@ player createDiaryRecord ["infos",
 <br/>* When you set up a base, never leave your supplies unguarded, one guard will suffice, but it is recommended you have at least 2, maybe 3 guards at base at all times.
 <br/>
 <br/>* There are very aggressive AI characters that spawn with most missions and will protect the mission objectives with deadly force, be aware of them.
+"
+]];
+
+_WASD = AKEYNAME("MoveForward") + "," + AKEYNAME("MoveBack") + "," + AKEYNAME("TurnLeft") + "," + AKEYNAME("TurnRight");
+
+player createDiaryRecord ["infos",
+[
+"Admin Spectate keys",
+"
+<br/>Admin menu Spectate camera controls:
+<br/>
+<br/>Shift + " + AKEYNAME("NextChannel") + " (next player)
+<br/>Shift + " + AKEYNAME("PrevChannel") + " (previous player)
+<br/>Ctrl + " + NKEYNAME(18) + " (exit camera)
+<br/>Ctrl + " + AKEYNAME("Chat") + " (attach/detach camera from target)
+<br/>Ctrl + " + NKEYNAME(35) + " (toggle target HUD)
+<br/>" + AKEYNAME("NightVision") + " (nightvision, thermal)
+<br/>" + _WASD + " (move camera around)
+<br/>" + NKEYNAME(16) + " (move camera up)
+<br/>" + NKEYNAME(44) + " (move camera down)
+<br/>Mouse Move (rotate camera)
+<br/>Mouse Wheel Up (increase camera speed)
+<br/>Mouse Wheel Down (decrease camera speed)
+<br/>Shift + " + _WASD + " (move camera around faster)
+<br/>" + AKEYNAME("ShowMap") + " (open/close map - click on map to teleport camera)
+"
+]];
+
+player createDiaryRecord ["infos",
+[
+"Player hotkeys",
+"
+<br/>List of player hotkeys and functions:
+<br/>
+<br/>" + NKEYNAME(41) + " (open player menu)
+<br/>" + NKEYNAME(207) + " (toggle earplugs)
+<br/>" + NKEYNAME(199) + ", " + NKEYNAME(219) + ", " + NKEYNAME(220) + " (toggle player names)
+<br/>Ctrl + " + AKEYNAME("GetOut") + " (emergency eject)
+<br/>" + AKEYNAME("GetOver") + " (open parachute)
+<br/>Shift + " + NKEYNAME(201) + " / " + NKEYNAME(209) + " (adjust nightvision)
+<br/>" + NKEYNAME(22) + " (admin menu)
 "
 ]];
 
