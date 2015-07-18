@@ -18,7 +18,7 @@ createDialog "TOParmaInfoD";
 _display = (findDisplay TOParmaInfo_dialog);
 
 _serverInfoText = _display displayCtrl TOParmaInfo_Server_Info;
-_serverInfoString = format ["<t color='#A0FFFF'>DADS #1 Chernarus A3Wasteland</t>", call A3W_extDB_ServerID, worldName];
+_serverInfoString = format ["<t color='#A0FFFF'>DADS #3 Chernarus A3Wasteland</t>", call A3W_extDB_ServerID, worldName];
 _serverInfoText ctrlSetStructuredText parseText _serverInfoString;
 
 _generalInfoText = _display displayCtrl TOParmaInfo_General_Info_BG;
@@ -26,12 +26,12 @@ _generalInfoString = "Website: <t color='#0091CD'><a href='http://www.dadsarmy.s
 _generalInfoText ctrlSetStructuredText parseText _generalInfoString;
 
 
-_rulesOnline = "http://www.dadsarmy.se/forum";
+_rulesOnline = "";
 _rulesOffline = "addons\TOParmaInfo\rules.html";
-_newsOnline = "http://www.dadsarmy.se/forum";
+_newsOnline = "";
 _newsOffline = "addons\TOParmaInfo\news.html";
-//_statsOnline = "http://www.dadsarmy.se/forum" + _uid;
-_statsOnline = "http://www.dadsarmy.se/forum";
+//_statsOnline = "" + _uid;
+_statsOnline = "";
 _statsOffline = "addons\TOParmaInfo\stats.html";
 
 
