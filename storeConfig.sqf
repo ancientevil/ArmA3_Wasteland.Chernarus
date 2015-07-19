@@ -65,44 +65,32 @@ rifleArray = compileFinal str
 	["MXM Rifle", "arifle_MXM_F", 300],
 	["MXM Rifle (Black)", "arifle_MXM_Black_F", 325],
 	["DMR Rifle", "srifle_DMR_01_F", 375],
-	["Mk14 Rifle (Camo) [DLC]", "srifle_DMR_06_camo_F", 450], // DLC Sniper Rifle
-	["Mk14 Rifle (Olive) [DLC]", "srifle_DMR_06_olive_F", 450], // DLC Sniper Rifle
 	["Mk18 ABR Rifle", "srifle_EBR_F", 550],
-	["Mk-1 EMR Rifle (Camo) [DLC]", "srifle_DMR_03_multicam_F", 600], // DLC Sniper Rifle
-	["Mk-1 EMR Rifle (Khaki) [DLC]", "srifle_DMR_03_khaki_F", 600], // DLC Sniper Rifle
-	["Mk-1 EMR Rifle (Sand) [DLC]", "srifle_DMR_03_tan_F", 600], // DLC Sniper Rifle
-	["Mk-1 EMR Rifle (Woodland) [DLC]", "srifle_DMR_03_woodland_F", 600], // DLC Sniper Rifle
-	["Mk-1 EMR Rifle (Black) [DLC]", "srifle_DMR_03_F", 600], // DLC Sniper Rifle
-	//["NATO DMR (provisional) spotter [DLC]", "srifle_DMR_03_spotter_F", 1500], // DLC Sniper Rifle - BUGGED
-	["MAR-10 Rifle (Black) [DLC]", "srifle_DMR_02_F", 750], // DLC Sniper Rifle
-	["MAR-10 Rifle (Camo) [DLC]", "srifle_DMR_02_camo_F", 750], // DLC Sniper Rifle
-	["MAR-10 Rifle (Sand) [DLC]", "srifle_DMR_02_sniper_F", 750], // DLC Sniper Rifle
-	["Cyrus Rifle (Black) [DLC]", "srifle_DMR_05_blk_F", 1000], // DLC Sniper Rifle
-	["Cyrus Rifle (Hex) [DLC]", "srifle_DMR_05_hex_F", 1000], // DLC Sniper Rifle
-	["Cyrus Rifle (Tan) [DLC]", "srifle_DMR_05_tan_f", 1000], // DLC Sniper Rifle
-	["ASP-1 Kir Rifle (Black) [DLC]", "srifle_DMR_04_F", 5000], // DLC Sniper Rifle
-	["ASP-1 Kir Rifle (Tan) [DLC]", "srifle_DMR_04_Tan_F", 5000], // DLC Sniper Rifle
-	
+
 	// DLC
 	["Mk14 Rifle (Camo) [DLC]", "srifle_DMR_06_camo_F", 450],
 	["Mk14 Rifle (Olive) [DLC]", "srifle_DMR_06_olive_F", 450],
-	["Mk-I EMR Rifle [DLC]", "srifle_DMR_03_F", 500],
-	["Mk-I EMR Rifle (Camo) [DLC]", "srifle_DMR_03_multicam_F", 550],
-	["Mk-I EMR Rifle (Khaki) [DLC]", "srifle_DMR_03_khaki_F", 550],
-	["Mk-I EMR Rifle (Sand) [DLC]", "srifle_DMR_03_tan_F", 550],
-	["Mk-I EMR Rifle (Woodland) [DLC]", "srifle_DMR_03_woodland_F", 550],
-	["MAR-10 Rifle [DLC]", "srifle_DMR_02_F", 750],
-	["MAR-10 Rifle (Camo) [DLC]", "srifle_DMR_02_camo_F", 800],
-	["MAR-10 Rifle (Sand) [DLC]", "srifle_DMR_02_sniper_F", 800],
-	["Cyrus Rifle [DLC]", "srifle_DMR_05_blk_F", 750],
-	["Cyrus Rifle (Hex) [DLC]", "srifle_DMR_05_hex_F", 800],
-	["Cyrus Rifle (Tan) [DLC]", "srifle_DMR_05_tan_f", 800],
+	["Mk-I EMR Rifle (Black) [DLC]", "srifle_DMR_03_F", 600],
+	["Mk-I EMR Rifle (Camo) [DLC]", "srifle_DMR_03_multicam_F", 600],
+	["Mk-I EMR Rifle (Khaki) [DLC]", "srifle_DMR_03_khaki_F", 600],
+	["Mk-I EMR Rifle (Sand) [DLC]", "srifle_DMR_03_tan_F", 600],
+	["Mk-I EMR Rifle (Woodland) [DLC]", "srifle_DMR_03_woodland_F", 600],
+	//["NATO DMR (provisional) spotter [DLC]", "srifle_DMR_03_spotter_F", 1500], // BUGGED
+	["MAR-10 Rifle (Black) [DLC]", "srifle_DMR_02_F", 750],
+	["MAR-10 Rifle (Camo) [DLC]", "srifle_DMR_02_camo_F", 750],
+	["MAR-10 Rifle (Sand) [DLC]", "srifle_DMR_02_sniper_F", 750],
+	["Cyrus Rifle (Black) [DLC]", "srifle_DMR_05_blk_F", 1000],
+	["Cyrus Rifle (Hex) [DLC]", "srifle_DMR_05_hex_F", 1000],
+	["Cyrus Rifle (Tan) [DLC]", "srifle_DMR_05_tan_f", 1000],
 
 	// Sniper Rifles
 	["M320 LRR Sniper", "srifle_LRR_LRPS_F", 2000],
 	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_LRPS_F", 2100],
 	["GM6 Lynx Sniper", "srifle_GM6_LRPS_F", 2250],
 	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_LRPS_F", 2350]
+
+	["ASP-1 Kir Rifle (Black) [DLC]", "srifle_DMR_04_F", 5000],
+	["ASP-1 Kir Rifle (Tan) [DLC]", "srifle_DMR_04_Tan_F", 5000],
 ];
 
 lmgArray = compileFinal str
@@ -277,19 +265,19 @@ accessoriesArray = compileFinal str
 	["Suppressor 6.5mm", "muzzle_snds_H", 250, "item"],
 	["Suppressor 6.5mm LMG", "muzzle_snds_H_MG", 300, "item"],
 	["Suppressor 7.62mm", "muzzle_snds_B", 350, "item"],
-	["Suppressor .338 [DLC]", "muzzle_snds_338_black", 450, "item"], // DLC Item
-	["Suppressor .338 (Green) [DLC]", "muzzle_snds_338_green", 450, "item"], // DLC Item
-	["Suppressor .338 (Sand) [DLC]", "muzzle_snds_338_sand", 450, "item"], // DLC Item
-	["Suppressor 9.3mm [DLC]", "muzzle_snds_93mmg", 550, "item"], // DLC Item
-	["Suppressor 9.3mm (Tan) [DLC]", "muzzle_snds_93mmg_tan", 550, "item"], // DLC Item
-	["Bipod (NATO)", "bipod_01_F_blk", 450, "item"], // DLC Item
-	["Bipod (CSAT)", "bipod_02_F_blk", 450, "item"], // DLC Item
-	["Bipod (AAF)", "bipod_03_F_blk", 450, "item"], // DLC Item
-	["Bipod (MTP)", "bipod_01_F_mtp", 450, "item"], // DLC Item
-	["Bipod (Hex)", "bipod_02_F_hex", 450, "item"], // DLC Item
-	["Bipod (Olive)", "bipod_03_F_oli", 450, "item"], // DLC Item
-	["Bipod (Sand)", "bipod_01_F_snd", 450, "item"], // DLC Item
-	["Bipod (Tan)", "bipod_02_F_tan", 450, "item"], // DLC Item 
+	["Suppressor .338 [DLC]", "muzzle_snds_338_black", 450, "item"],
+	["Suppressor .338 (Green) [DLC]", "muzzle_snds_338_green", 450, "item"],
+	["Suppressor .338 (Sand) [DLC]", "muzzle_snds_338_sand", 450, "item"],
+	["Suppressor 9.3mm [DLC]", "muzzle_snds_93mmg", 550, "item"],
+	["Suppressor 9.3mm (Tan) [DLC]", "muzzle_snds_93mmg_tan", 550, "item"],
+	["Bipod (NATO)", "bipod_01_F_blk", 450, "item"],
+	["Bipod (CSAT)", "bipod_02_F_blk", 450, "item"],
+	["Bipod (AAF)", "bipod_03_F_blk", 450, "item"],
+	["Bipod (MTP)", "bipod_01_F_mtp", 450, "item"],
+	["Bipod (Hex)", "bipod_02_F_hex", 450, "item"],
+	["Bipod (Olive)", "bipod_03_F_oli", 450, "item"],
+	["Bipod (Sand)", "bipod_01_F_snd", 450, "item"],
+	["Bipod (Tan)", "bipod_02_F_tan", 450, "item"],
 	["Flashlight", "acc_flashlight", 100, "item"],
 	["IR Laser Pointer", "acc_pointer_IR", 100, "item"],
 	["Yorris Sight (Zubr Revolver)", "optic_Yorris", 50, "item"],
@@ -304,13 +292,13 @@ accessoriesArray = compileFinal str
 	["RCO", "optic_Hamr", 200, "item"],
 	["MOS", "optic_SOS", 300, "item"],
 	["DMS", "optic_DMS", 350, "item"],
-	["AMS [DLC]", "optic_AMS", 400, "item"], // DLC Item
-	["AMS (Khaki) [DLC]", "optic_AMS_khk", 400, "item"], // DLC Item
-	["AMS (Sand) [DLC]", "optic_AMS_snd", 400, "item"], // DLC Item
-	["Kahlia [DLC]", "optic_KHS_blk", 500, "item"], // DLC Item
-	["Kahlia (Hex) [DLC]", "optic_KHS_hex", 500, "item"], // DLC Item
-	["Kahlia (Old) [DLC]", "optic_KHS_old", 500, "item"], // DLC Item
-	["Kahlia (Tan) [DLC]", "optic_KHS_tan", 500, "item"], // DLC Item
+	["AMS [DLC]", "optic_AMS", 400, "item"],
+	["AMS (Khaki) [DLC]", "optic_AMS_khk", 400, "item"],
+	["AMS (Sand) [DLC]", "optic_AMS_snd", 400, "item"],
+	["Kahlia [DLC]", "optic_KHS_blk", 500, "item"],
+	["Kahlia (Hex) [DLC]", "optic_KHS_hex", 500, "item"],
+	["Kahlia (Tan) [DLC]", "optic_KHS_tan", 500, "item"],
+	["Kahlia (Old) [DLC]", "optic_KHS_old", 500, "item"],
 	["LRPS", "optic_LRPS", 750, "item"],
 	["NVS", "optic_NVS", 1500, "item"],
 	["TWS", "optic_tws", 7500, "item"],
@@ -525,15 +513,15 @@ vestArray = compileFinal str
 	["Carrier Lite (Black)", "V_PlateCarrier1_blk", -1, "vest"],
 	["Carrier Rig (Green)", "V_PlateCarrier3_rgr", -1, "vest"],
 	["Carrier GL Rig (Green)", "V_PlateCarrierGL_rgr", -1, "vest"],
-	["Carrier GL Rig (Black)", "V_PlateCarrierGL_blk", -1, "vest"], // DLC Vest
-	["Carrier GL Rig (MTP)", "V_PlateCarrierGL_mtp", -1, "vest"], // DLC Vest
-	["Carrier Special Rig (Green)", "V_PlateCarrierSpec_rgr", -1, "vest"], // DLC Vest
-	["Carrier Special Rig (Black)", "V_PlateCarrierSpec_blk", -1, "vest"], // DLC Vest
-	["Carrier Special Rig (MTP)", "V_PlateCarrierSpec_mtp", -1, "vest"], // DLC Vest
+	["Carrier GL Rig (Black)", "V_PlateCarrierGL_blk", -1, "vest"],
+	["Carrier GL Rig (MTP)", "V_PlateCarrierGL_mtp", -1, "vest"],
+	["Carrier Special Rig (Green)", "V_PlateCarrierSpec_rgr", -1, "vest"],
+	["Carrier Special Rig (Black)", "V_PlateCarrierSpec_blk", -1, "vest"],
+	["Carrier Special Rig (MTP)", "V_PlateCarrierSpec_mtp", -1, "vest"],
 	["GA Carrier Lite (Digi)", "V_PlateCarrierIA1_dgtl", -1, "vest"],
 	["GA Carrier Rig (Digi)", "V_PlateCarrierIA2_dgtl", -1, "vest"],
 	["GA Carrier GL Rig (Digi)", "V_PlateCarrierIAGL_dgtl", -1, "vest"],
-	["GA Carrier GL Rig (Olive)", "V_PlateCarrierIAGL_oli", -1, "vest"], // DLC Vest
+	["GA Carrier GL Rig (Olive)", "V_PlateCarrierIAGL_oli", -1, "vest"],
 	["LBV Harness", "V_HarnessO_brn", -1, "vest"],
 	["LBV Harness (Gray)", "V_HarnessO_gry", -1, "vest"],
 	["LBV Grenadier Harness", "V_HarnessOGL_brn", -1, "vest"],
