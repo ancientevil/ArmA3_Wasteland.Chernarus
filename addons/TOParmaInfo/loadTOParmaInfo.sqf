@@ -18,11 +18,11 @@ createDialog "TOParmaInfoD";
 _display = (findDisplay TOParmaInfo_dialog);
 
 _serverInfoText = _display displayCtrl TOParmaInfo_Server_Info;
-_serverInfoString = format ["<t color='#A0FFFF'>DADS #2 A3Wasteland</t>", call A3W_extDB_ServerID, worldName];
+_serverInfoString = format ["<t color='#A0FFFF'>DADS #2 Altis HARDCORE</t>", call A3W_extDB_ServerID, worldName];
 _serverInfoText ctrlSetStructuredText parseText _serverInfoString;
 
 _generalInfoText = _display displayCtrl TOParmaInfo_General_Info_BG;
-_generalInfoString = "Website: <t color='#0091CD'><a href='http://www.dadsarmy.se'>www.dadsarmy.se</a></t> Forums: <t color='#0091CD'><a href='http://www.dadsarmy.se/forum'>DADS Forum</a></t> TeamSpeak: ts1.dadsarmy.se";
+_generalInfoString = "Website: <t color='#0091CD'><a href='http://www.dadsarmy.se'>DADSARMY.se</a></t> Forums: <t color='#0091CD'><a href='http://www.dadsarmy.se/forum'>DADS Forum</a></t> TeamSpeak: ts1.dadsarmy.se";
 _generalInfoText ctrlSetStructuredText parseText _generalInfoString;
 
 
