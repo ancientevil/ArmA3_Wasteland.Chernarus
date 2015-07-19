@@ -31,7 +31,6 @@ _sradius = if (!_baseBuilding && _essentials) then { 75 } else { 15 };
 
 _createRandomObject =
 {
-	private ["_pos", "_minrad", "_maxrad", "_counter"];
 	_pos = _this select 0;
 	_minrad = _this select 1;
 	_maxrad = _this select 2;

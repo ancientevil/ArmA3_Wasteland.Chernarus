@@ -62,7 +62,6 @@ player addEventHandler ["Put",
 }];
 
 player addEventHandler ["WeaponDisassembled", { _this spawn weaponDisassembledEvent }];
-
 player addEventHandler ["WeaponAssembled",
 {
 	_player = _this select 0;

@@ -244,12 +244,12 @@ _selLocChanged =
 				_location call _getPlayersInfo;
 				_lastSpawn = player getVariable (_location + "_lastSpawn");
 				_cooldown = false;
-				
+
 				if (!isNil "_lastSpawn") then
 				{
 					_townSpawnCooldown = TOWN_SPAWN_COOLDOWN;
 					_remaining = _townSpawnCooldown - (diag_tickTime - _lastSpawn);
-					
+
 					if (_townSpawnCooldown > 0 && _remaining > 0) then
 					{
 						_textStr = _textStr + format ["[<t color='#ffff00'>%1</t>] ", _remaining call fn_formatTimer];
