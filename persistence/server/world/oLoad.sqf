@@ -80,6 +80,7 @@ _exclObjectIDs = [];
 
 		if (!isNil "_objectID") then
 		{
+ 			_obj setVariable ["A3W_objectID", _objectID, true];
 			_obj setVariable ["A3W_objectSaved", true, true];
 			A3W_objectIDs pushBack _objectID;
 		};
