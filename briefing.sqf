@@ -305,60 +305,6 @@ player createDiaryRecord ["changelog",
 "
 ]];
 
-player createDiaryRecord ["changelog",
- [
-"NL United",
-"
-<br/> [Added] Base locker (It is hackable and destroyable)
-<br/> [Added] Safe with keypad to General Store
-<br/> [Added] Ability to change uniform texture
-<br/> [Added] Ability to mark your owned vehicles and objects on the map
-<br/> [Added] Show R.I.P. map marker on corpse location after death
-<br/> [Added] Multiplying money reward for players that stay on the server
-<br/> [Added] Changed the appearance of the store NPCs
-<br/> [Added] Sell, Change Ownership and Resupply trucks
-<br/> [Added] Vehicle locking and info script by Micovery
-<br/> [Added] Vehicle lock state saving
-<br/> [Added] Locked vehicle break in and hot wire at a cost
-<br/> [Added] Heal self script
-<br/> [Added] Access to DLC Helicopter pilot seat without DLC
-<br/> [Added] New main missions: Hackers, Abandoned Jet, Hostile Jet Formation
-<br/> [Added] New side missions: Snipers, DrugsRunners, Roadblock
-<br/> [Added] New side missions: Geocache, Smugglers, Hostile Jet
-<br/> [Added] New money missions: Military patrol and Altis-Stratis patrol
-<br/> [Added] Intro script
-<br/> [Added] Player controlled IP cameras
-<br/> [Added] Device detector (IP Cameras, Spawn Beacons and Base Lockers)
-<br/> [Added] Donator bases with donator lock state
-<br/> [Added] BluFor and OpFor Base
-<br/> [Added] Mortar to one mission as reward
-<br/> [Added] High value target and Drugs runner
-<br/> [Added] Gas Grenades and Gas Masks by Mokey
-<br/> [Added] Logging to all admin commands
-<br/> [Added] Airdrop system by Apoc
-<br/> [Added] Teamlock to independent
-<br/> [Added] Voiceblock to side channel
-<br/> [Added] New welcome screen by Lodac from TOP Arma
-<br/> [Added] Drugs by Micovery
-<br/> [Added] Wateredge fix by Micovery
-<br/> [Added] Maximum spawnbeacon option
-<br/> [Added] Delete spawnbeacon ability
-<br/> [Added] 3D Markers
-<br/> [Added] ZLT Fastrope
-<br/> [Added] Explosives to vehicles
-<br/> [Added] Fix for spawnbeacons placed above water
-<br/> [Added] IEDs to stores and vehicles.
-<br/> [Added] Several new objects to General store for base building
-<br/> [Removed] Mortar from store
-<br/> [Changed] Starting gear
-<br/> [Changed] Only 2 vehicle stores sell planes (Altis)
-<br/> [Changed] Disabled Fog
-<br/> [Changed] Changed prices
-<br/> [Changed] Vehicles spawn in locked and with engine on
-<br/> [Changed] Spawnbeacon insertion to 0 mtrs
-<br/> [Changed] Old R3F script to version 3.1
-"
-]];
 
 player createDiaryRecord ["credits",
 [
@@ -400,7 +346,7 @@ player createDiaryRecord ["credits",
 <br/>	* k4n30 (GitHub)
 <br/>	* Killzone_Kid (KillzoneKid.com)
 <br/>	* Krunch (GitHub)
-<br/>	* LouDnl (GitHub / A3W forums)
+<br/>	* LouDnl (GitHub)
 <br/>	* madbull (R3F)
 <br/>	* Mainfrezzer (Magnon)
 <br/>	* meat147 (GitHub)
@@ -421,34 +367,11 @@ player createDiaryRecord ["credits",
 <br/>	* wiking.at (A3W forums)
 <br/>	* xx-LSD-xx (Armaholic)
 <br/>	* Zenophon (BIS Forums)
-<br/>	* Cael817 (A3W forums)
-<br/>	* Micovery (A3W forums)
-<br/>	* BadVolt (A3W forums)
 <br/>
 <br/><font size='16'>Thanks A LOT to everyone involved for the help and inspiration!</font>
 "
 ]];
 
-
-player createDiaryRecord ["infos",
-[
-"Hints and Tips",
-"
-<br/><font size='18'>A3Wasteland</font>
-<br/>
-<br/>* At the start of the game, spread out and find supplies before worrying about where to establish a meeting place or a base, supplies are important and very valuable.
-<br/>
-<br/>* When picking a base location, it is best advised to pick a place that is out of the way and not so obvious such as airports, cities, map-bound bases, etc. remember, players randomly spawn in and around towns and could even spawn inside your base should you set it up in a town.
-<br/>
-<br/>* If you spawn in an area with no vehicles or supplies in the immediate area, DO NOT just click respawn from the pause menu, chances are if you search an area of a few hundred meters, you will find something.
-<br/>
-<br/>* Always be on the lookout for nightvision. they are located in the ammo crates, and there are pairs scattered throughout vehicles. You can also purchase them from the gunstores. Nighttime without them SUCKS, and if you have them, you can conduct stealth raids on enemy bases under the cover of complete darkness.
-<br/>
-<br/>* When you set up a base, never leave your supplies unguarded, one guard will suffice, but it is recommended you have at least 2, maybe 3 guards at base at all times.
-<br/>
-<br/>* There are very aggressive AI characters that spawn with most missions and will protect the mission objectives with deadly force, be aware of them.
-"
-]];
 
 _WASD = AKEYNAME("MoveForward") + "," + AKEYNAME("MoveBack") + "," + AKEYNAME("TurnLeft") + "," + AKEYNAME("TurnRight");
 
@@ -488,6 +411,26 @@ player createDiaryRecord ["infos",
 <br/>" + AKEYNAME("GetOver") + " (open parachute)
 <br/>Shift + " + NKEYNAME(201) + " / " + NKEYNAME(209) + " (adjust nightvision)
 <br/>" + NKEYNAME(22) + " (admin menu)
+"
+]];
+
+player createDiaryRecord ["infos",
+[
+"Hints and Tips",
+"
+<br/><font size='18'>A3Wasteland</font>
+<br/>
+<br/>* At the start of the game, spread out and find supplies before worrying about where to establish a meeting place or a base, supplies are important and very valuable.
+<br/>
+<br/>* When picking a base location, it is best advised to pick a place that is out of the way and not so obvious such as airports, cities, map-bound bases, etc. remember, players randomly spawn in and around towns and could even spawn inside your base should you set it up in a town.
+<br/>
+<br/>* If you spawn in an area with no vehicles or supplies in the immediate area, DO NOT just click respawn from the pause menu, chances are if you search an area of a few hundred meters, you will find something.
+<br/>
+<br/>* Always be on the lookout for nightvision. they are located in the ammo crates, and there are pairs scattered throughout vehicles. You can also purchase them from the gunstores. Nighttime without them SUCKS, and if you have them, you can conduct stealth raids on enemy bases under the cover of complete darkness.
+<br/>
+<br/>* When you set up a base, never leave your supplies unguarded, one guard will suffice, but it is recommended you have at least 2, maybe 3 guards at base at all times.
+<br/>
+<br/>* There are very aggressive AI characters that spawn with most missions and will protect the mission objectives with deadly force, be aware of them.
 "
 ]];
 

@@ -148,6 +148,7 @@ A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
 [] execVM "addons\UAV_Control\functions.sqf";		// Protected UAV addon
 [] execVM "addons\water_edge\functions.sqf";		// Water edge fix
 [] execVM "addons\cctv\functions.sqf";				// CCTV Camera addon
+[] execVM "addons\UAV_Control\functions.sqf";
 
 call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 [] execVM "client\functions\drawPlayerMarkers.sqf";

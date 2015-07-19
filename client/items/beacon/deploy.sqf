@@ -1,5 +1,5 @@
 // ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
+// * This project is licensed under the GNU Affero GPL v3. Copyright Â© 2014 A3Wasteland.com *
 // ******************************************************************************************
 //@file Version: 1.0
 //@file Name: deploy.sqf
@@ -11,35 +11,7 @@
 #define ANIM "AinvPknlMstpSlayWrflDnon_medic"
 #define ERR_CANCELLED "Action Cancelled"
 #define ERR_IN_VEHICLE "Action Failed! You can't do this in a vehicle"
-#define ERR_DONATOR "Action Failed! You are not allowed to place a beacon near this base"
-#define MAX_BEACONS format ["You cannot deploy more then %1 spawnbeacons", [_MaxSpawnbeacons]]
-_MaxSpawnbeacons = ceil (["A3W_maxSpawnBeacons", 5] call getPublicVar);
-
-private ["_hasFailed", "_success","_pos","_uid","_beacon","_IsProtected","_IsAllowed","_beacons","_ownedBeacons"];
-
-_IsProtected = false;
-_IsAllowed = false;
-
-{
-	if(((player distance getMarkerPos (_x select 3)) <  (_x select 1))) then 
-	{
-		_IsProtected = true;			
-		if ((getPlayerUID player) in (_x select 5)) then {				
-			_IsAllowed = true;
-		};
-	};
-} forEach call Donators;
-
-_beacons = []; 
-{ 
-	if (_x getVariable ["ownerUID",""] == getPlayerUID player) then 
-	{ 
-		_beacons pushBack _x; 
-	}; 
-} forEach pvar_spawn_beacons; 
-
-_ownedBeacons = count _beacons;
-
+private ["_hasFailed", "_success","_pos","_uid","_beacon"];
 _hasFailed = {
 	private ["_progress", "_failed", "_text"];
 	_progress = _this select 0;
@@ -48,8 +20,6 @@ _hasFailed = {
 		case (!alive player): {};
 		case (doCancelAction) :{doCancelAction = false; _text = ERR_CANCELLED;};
 		case (vehicle player != player): {_text = ERR_IN_VEHICLE};
-		case ((_IsProtected) && !(_IsAllowed)): {_text = ERR_DONATOR};
-		case (_ownedBeacons >= _MaxSpawnbeacons): {_text = MAX_BEACONS; player spawn deleteBeacon};
 		default {
 			_text = format["Spawn Beacon %1%2 Deployed", round(_progress*100), "%"];
 			_failed = false;
@@ -85,3 +55,4 @@ if (_success) then {
 	["You placed the Spawn Beacon successfully!", 5] call mf_notify_client;
 };
 _success;
+

@@ -83,6 +83,21 @@ rifleArray = compileFinal str
 	["ASP-1 Kir Rifle (Black) [DLC]", "srifle_DMR_04_F", 5000], // DLC Sniper Rifle
 	["ASP-1 Kir Rifle (Tan) [DLC]", "srifle_DMR_04_Tan_F", 5000], // DLC Sniper Rifle
 	
+	// DLC
+	["Mk14 Rifle (Camo) [DLC]", "srifle_DMR_06_camo_F", 450],
+	["Mk14 Rifle (Olive) [DLC]", "srifle_DMR_06_olive_F", 450],
+	["Mk-I EMR Rifle [DLC]", "srifle_DMR_03_F", 500],
+	["Mk-I EMR Rifle (Camo) [DLC]", "srifle_DMR_03_multicam_F", 550],
+	["Mk-I EMR Rifle (Khaki) [DLC]", "srifle_DMR_03_khaki_F", 550],
+	["Mk-I EMR Rifle (Sand) [DLC]", "srifle_DMR_03_tan_F", 550],
+	["Mk-I EMR Rifle (Woodland) [DLC]", "srifle_DMR_03_woodland_F", 550],
+	["MAR-10 Rifle [DLC]", "srifle_DMR_02_F", 750],
+	["MAR-10 Rifle (Camo) [DLC]", "srifle_DMR_02_camo_F", 800],
+	["MAR-10 Rifle (Sand) [DLC]", "srifle_DMR_02_sniper_F", 800],
+	["Cyrus Rifle [DLC]", "srifle_DMR_05_blk_F", 750],
+	["Cyrus Rifle (Hex) [DLC]", "srifle_DMR_05_hex_F", 800],
+	["Cyrus Rifle (Tan) [DLC]", "srifle_DMR_05_tan_f", 800],
+
 	// Sniper Rifles
 	["M320 LRR Sniper", "srifle_LRR_LRPS_F", 2000],
 	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_LRPS_F", 2100],
@@ -221,7 +236,7 @@ ammoArray = compileFinal str
 	["RPG-42 Anti-Tank Rocket", "RPG32_F", 200],              // Direct damage: high      | Splash damage: low    | Guidance: none
 	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 175],      // Direct damage: medium    | Splash damage: medium | Guidance: none
 	["PCML Anti-Tank Missile", "NLAW_F", 400],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
-	["Titan Anti-Tank Missile", "Titan_AT", 1000],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
+	["Titan Anti-Tank Missile", "Titan_AT", 1000],            // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
 	["Titan Anti-Personnel Missile", "Titan_AP", 750],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
 	["Titan Anti-Air Missile", "Titan_AA", 500],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
@@ -512,6 +527,9 @@ vestArray = compileFinal str
 	["Carrier GL Rig (Green)", "V_PlateCarrierGL_rgr", -1, "vest"],
 	["Carrier GL Rig (Black)", "V_PlateCarrierGL_blk", -1, "vest"], // DLC Vest
 	["Carrier GL Rig (MTP)", "V_PlateCarrierGL_mtp", -1, "vest"], // DLC Vest
+	["Carrier Special Rig (Green)", "V_PlateCarrierSpec_rgr", -1, "vest"], // DLC Vest
+	["Carrier Special Rig (Black)", "V_PlateCarrierSpec_blk", -1, "vest"], // DLC Vest
+	["Carrier Special Rig (MTP)", "V_PlateCarrierSpec_mtp", -1, "vest"], // DLC Vest
 	["GA Carrier Lite (Digi)", "V_PlateCarrierIA1_dgtl", -1, "vest"],
 	["GA Carrier Rig (Digi)", "V_PlateCarrierIA2_dgtl", -1, "vest"],
 	["GA Carrier GL Rig (Digi)", "V_PlateCarrierIAGL_dgtl", -1, "vest"],
@@ -541,9 +559,6 @@ vestArray = compileFinal str
 	["Raven Night Vest", "V_TacVestIR_blk", -1, "vest"],
 	["CTRG Plate Carrier Rig Mk.1 (Light)", "V_PlateCarrierL_CTRG", -1, "vest"],
 	["CTRG Plate Carrier Rig Mk.2 (Heavy)", "V_PlateCarrierH_CTRG", -1, "vest"],
-	["Carrier Special Rig (Green)", "V_PlateCarrierSpec_rgr", -1, "vest"],
-	["Carrier Special Rig (Black)", "V_PlateCarrierSpec_blk", -1, "vest"], // DLC Vest
-	["Carrier Special Rig (MTP)", "V_PlateCarrierSpec_mtp", -1, "vest"], // DLC Vest
 	["Press Vest", "V_Press_F", -1, "vest"]
 ];
 
@@ -826,11 +841,11 @@ planesArray = compileFinal str
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 125000, "vehicle"],
 	["To-199 Neophron CAS", "O_Plane_CAS_02_F", 400000, "vehicle"],
 	["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 500000, "vehicle"],
-	["MQ4A Greyhawk Missile  UAV", "B_UAV_02_F", 400000, "vehicle"],
+	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 400000, "vehicle"],
 	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 300000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than ATGMs
-	["K40 Ababil-3 Missile  UAV (CSAT)", "O_UAV_02_F", 400000, "vehicle"],
+	["K40 Ababil-3 Missile UAV (CSAT)", "O_UAV_02_F", 400000, "vehicle"],
 	["K40 Ababil-3 Bomber UAV (CSAT)", "O_UAV_02_CAS_F", 300000, "vehicle"],
-	["K40 Ababil-3 Missile  UAV (AAF)", "I_UAV_02_F", 400000, "vehicle"],
+	["K40 Ababil-3 Missile UAV (AAF)", "I_UAV_02_F", 400000, "vehicle"],
 	["K40 Ababil-3 Bomber UAV (AAF)", "I_UAV_02_CAS_F", 300000, "vehicle"]
 ];
 
@@ -1035,7 +1050,7 @@ customPlayerItems = compileFinal str
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
 	//["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
 	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500],
-	
+
 	["IP/Net Camera", "cctv_camera", localize "STR_WL_ShopDescriptions_CCTV_Camera", "addons\cctv\icons\camcorder.paa", 850, 500],
 	["Camera Terminal", "cctv_base", localize "STR_WL_ShopDescriptions_CCTV_Base", "addons\cctv\icons\laptop.paa", 500, 300]
 ];
