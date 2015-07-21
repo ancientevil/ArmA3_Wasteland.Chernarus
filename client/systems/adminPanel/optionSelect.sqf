@@ -96,10 +96,6 @@ if (_uid call isAdmin) then
 					execVM "client\systems\adminPanel\toggleInvisMode.sqf";
 					//Is logged from inside target script
 				};
-				case 10: // toggle God mode
-				{
-					execVM "client\systems\adminPanel\toggleInvisMode.sqf";
-				};
 			};
 		};
 		case (!isNull _displayDebug): //Debug panel
@@ -154,6 +150,10 @@ if (_uid call isAdmin) then
 					[] call loadTOParmaInfo;
 					if (!isNil "notifyAdminMenu") then { ["News", "Opened"] call notifyAdminMenu };
 				};
+			};
+		};
+	};
+};
 			};
 		};
 	};

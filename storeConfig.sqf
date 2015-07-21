@@ -865,6 +865,11 @@ noColorVehicles = compileFinal str
 	// Deprecated
 ];
 
+noColorVehicles = compileFinal str
+[
+	// Deprecated
+];
+
 rgbOnlyVehicles = compileFinal str
 [
 	// Deprecated
@@ -1020,11 +1025,6 @@ customPlayerItems = compileFinal str
 	["Water Bottle", "water", localize "STR_WL_ShopDescriptions_Water", "client\icons\waterbottle.paa", 30, 15],
 	["Canned Food", "cannedfood", localize "STR_WL_ShopDescriptions_CanFood", "client\icons\cannedfood.paa", 30, 15],
 
-	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 125000, 62500],
-	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 100000, 50000],
-	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 140000, 70000],
-	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 150000, 75000],
-
 	["Repair Kit", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 750, 375],
 	["Jerry Can (Full)", "jerrycanfull", localize "STR_WL_ShopDescriptions_fuelFull", "client\icons\jerrycan.paa", 150, 75],
 	["Jerry Can (Empty)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
@@ -1036,6 +1036,11 @@ customPlayerItems = compileFinal str
 	
 	["IP/Net Camera", "cctv_camera", localize "STR_WL_ShopDescriptions_CCTV_Camera", "addons\cctv\icons\camcorder.paa", 7850, 5500],
 	["Camera Terminal", "cctv_base", localize "STR_WL_ShopDescriptions_CCTV_Base", "addons\cctv\icons\laptop.paa", 7500, 5300]
+];
+
+call compile preprocessFileLineNumbers "mapConfig\storeOwners.sqf";
+
+storeConfigDone = compileFinal "true";
 ];
 
 call compile preprocessFileLineNumbers "mapConfig\storeOwners.sqf";

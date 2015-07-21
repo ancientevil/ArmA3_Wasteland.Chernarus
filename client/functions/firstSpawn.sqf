@@ -62,7 +62,6 @@ player addEventHandler ["Put",
 }];
 
 player addEventHandler ["WeaponDisassembled", { _this spawn weaponDisassembledEvent }];
-
 player addEventHandler ["WeaponAssembled",
 {
 	_player = _this select 0;
@@ -199,4 +198,5 @@ if (playerSide in [BLUFOR,OPFOR,INDEPENDENT] && {{_x select 0 == _uid} count pva
 	};
 
 	titleText [format ["You have been locked to %1", _side], "PLAIN", 0.5];
+};
 };
