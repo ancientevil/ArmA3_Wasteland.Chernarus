@@ -520,4 +520,3 @@ player createDiaryRecord ["infos",
 <br/>A. Simply go into global chat and get the attention of one of the admins or visit our forums, and make a report if the offense is serious.
 "
 ]];
-]];

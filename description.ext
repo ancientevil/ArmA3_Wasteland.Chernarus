@@ -87,7 +87,6 @@ class CfgFunctions
 	{
 		#include "client\CfgFunctions.hpp"
 		#include "server\CfgFunctions.hpp"
-		#include "client\CfgFunctions.hpp"
 	};
 };
 
