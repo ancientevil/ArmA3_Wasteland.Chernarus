@@ -651,7 +651,7 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 
 genObjectsArray = compileFinal str
 [
-	["Base Re-Locker-non destroyable", "Land_Portable_generator_F", 300000, "object"],  //Cael817, SNAFU,Used for base operations <-- Non destroyable
+	//["Base Re-Locker-non destroyable", "Land_Portable_generator_F", 300000, "object"],  //Cael817, SNAFU,Used for base operations <-- Non destroyable
 	["Base Locker", "Land_Device_assembled_F", 50000, "object"],  //Cael817, SNAFU,Used for base operations <-- Destroyable
 	["Safe (PIN IS EMPTY)", "Box_NATO_AmmoVeh_F", 50000, "ammocrate"],
 	["Empty Ammo Crate", "Box_NATO_Ammo_F", 1200, "ammocrate"],
@@ -943,7 +943,19 @@ colorsArray = compileFinal str
 			["Woodland Dark", _texDir + "wooddark.paa"],
 			["Woodland Tiger", _texDir + "woodtiger.paa"],
 			["DADS", _texDir + "dads.paa"],
-			["SWEDEN", _texDir + "sweden.paa"]
+			["SWEDEN", _texDir + "sweden.paa"],
+			["Barbie", _texDir + "barbie.paa"],
+			["Bricks", _texDir + "bricks.paa"],
+			["Funky", _texDir + "funky.paa"],
+			["garbage", _texDir + "garbage.paa"],
+			["genetic", _texDir + "genetic.paa"],
+			["Germany", _texDir + "germany.paa"],
+			["Grassy", _texDir + "grassy.paa"],
+			["Mars", _texDir + "mars.paa"],
+			["Russia", _texDir + "russia.paa"],
+			["Snowy", _texDir + "snowy.paa"],
+			["Sphere", _texDir + "sphere.paa"],
+			["Stars", _texDir + "stars.paa"]
 		]
 	],
 	[ // Kart colors
